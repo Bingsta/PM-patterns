@@ -3,6 +3,5 @@
  */
 'use strict';
 
-var $ = require('jquery');
-window.$ = $;
-require('bootstrap');
+global.jQuery = require('jquery');
+var bootstrap = require('bootstrap');

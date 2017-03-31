@@ -1,8 +1,16 @@
 colors:
-  primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
-  secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+  Primary:
+    "@brand-primary": "#385797"
+    "@brand-accent": "#fe4d01"
+  Semantic:
+    "@brand-success": "#33cc99"
+    "@brand-danger": "#f95d61"
+    "@brand-warning": "#ffb64a"
+    "@brand-info": "#5692d6"
+  Neutrals:
+    "@gray-base": "#000"
+    "@gray-darker": "#222"
+    "@gray-dark": "#333"
+    "@gray": "#555"
+    "@gray-light": "#777"
+    "@gray-lighter": "#eee"

@@ -4,7 +4,7 @@ html {
 	&.f-menu-active {
 		overflow: hidden;
 
-		@media (min-width: 80em) {
+		@media (min-width: 60em) {
 			overflow: auto;
 		}
 	}
@@ -19,8 +19,9 @@ body {
 		height: 100%;
 		overflow: hidden;
 
-		@media (min-width: 80em) {
+		@media (min-width: 60em) {
 			overflow: auto;
+			height: auto;
 		}
 	}
 }
@@ -36,7 +37,7 @@ body {
 	.f-menu-active & {
 		transform: translate($menu-width, 0);
 
-		@media (min-width: 80em) {
+		@media (min-width: 60em) {
 			margin-left: $menu-width;
 			transform: translate(0, 0);
 		}
