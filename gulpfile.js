@@ -67,6 +67,19 @@ gulp.task('styles:fabricator', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
+gulp.task('styles:toolkit', function () {
+
+	return gulp.src(config.src.styles.toolkit)
+		.pipe(plumber())
+		.pipe(less({
+			errLogToConsole: true
+		}))
+		.pipe(prefix('last 2 version'))
+		.pipe(gulpif(!config.dev, csso()))
+		.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+		.pipe(gulpif(config.dev, reload({stream:true})));
+
+});
 
 gulp.task('styles:toolkit', function () {
 
@@ -116,9 +129,7 @@ gulp.task('favicon', function () {
 
 // fonts
 gulp.task('fonts', ['clean'], function () {
-        return gulp.src(config.src.fonts, {
-            base: 'src'
-        }).pipe(gulp.dest(config.dest + '/assets/toolkit/styles/fonts'));
+        return gulp.src(config.src.fonts).pipe(gulp.dest(config.dest + '/assets/toolkit/styles/fonts'));
     });
 
 // assemble

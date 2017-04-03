@@ -3,7 +3,7 @@
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
-	border-bottom: 1px solid map-get($colors, light);
+	border-bottom: 1px solid color(light);
 
 	&:last-child {
 		border-bottom: 0;
@@ -39,7 +39,7 @@
 }
 
 .f-item-border-bottom {
-	border-bottom: 1px solid map-get($colors, light);
+	border-bottom: 1px solid color(light);
 }
 
 .f-item-heading-group {
@@ -54,36 +54,4 @@
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 1;
-}
-
-
-.f-item-controls {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 0.5rem;
-
-	.f-control {
-		width: 14px;
-		height: 14px;
-		display: block;
-		float: left;
-
-		&:hover {
-			use {
-				fill: map-get($colors, normal);
-			}
-		}
-
-		use {
-			fill: map-get($colors, light);
-		}
-	}
-}
-
-.f-item-hidden {
-	display: none;
-}
-
-.f-item-notes {
-	font-size: 0.875rem;
 }

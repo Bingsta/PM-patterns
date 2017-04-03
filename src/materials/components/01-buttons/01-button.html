@@ -1,0 +1,11 @@
+---
+notes: |
+  These are notes associated with this `button` component.
+---
+<button type="button" class="btn {{#if style}}{{style}}{{else}}btn-default{{/if}} {{size}}">
+  {{#if text}}
+    {{{text}}}
+  {{else}}
+    Submit
+  {{/if}}
+</button>
