@@ -1,0 +1,102 @@
+@import "variables.less";
+@import "../theme/variables.less";
+
+@menu-color:      lighten(@brand-primary, 5%);
+
+body, html{
+  height:100%;
+}
+.app-container{
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  display:flex;
+}
+.app-menu{
+  width:@menu-width-collapsed;
+  height:100%;
+  overflow-y:auto;
+  overflow-x:visible;
+
+  color:#fff;
+  background-image: linear-gradient(darken(@brand-primary, 5%), lighten(@brand-primary, 0%) 100%);
+
+  .nav-pills > li.active > a, 
+  .nav-pills > li.active > a:hover, 
+  .nav-pills > li.active > a:focus {
+      color: #fff;
+      background-color: @navbar-inverse-bg;
+      border-right:3px solid @brand-accent;
+  }
+  .nav-pills > li > a, 
+  .nav-pills > li > a:hover, 
+  .nav-pills > li > a:focus {
+      border-radius: 0px;
+      color:#fff;
+      border:1px dotted transparent;
+  } 
+  .nav-pills > li > a:hover, 
+  .nav-pills > li > a:focus {
+      background-color: darken(@brand-primary, 8%);
+      border:1px dotted transparent;
+  }
+  .nav-pills > li > a:focus {
+      background-color:transparent;
+      border:1px dotted lighten(@brand-primary, 8%);
+  }
+}
+
+.app-menu-group + .app-menu-group{
+  padding-top:2rem;
+}
+
+.app-brand{
+  height:@navbar-height;
+  box-sizing: content-box;
+  margin-bottom:2rem;
+
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  
+  
+  background-color: @navbar-inverse-bg;
+  border:1px solid @navbar-inverse-border;
+}
+
+.app-main {
+  height:100%;
+  overflow-y:auto;
+  width:~"calc(100% - @{menu-width-collapsed})";
+}
+
+.app-header{
+  width:~"calc(100% - @{menu-width-collapsed})";
+  height:@navbar-height;
+
+  position:fixed;
+  top:0;
+  left:0;
+
+  margin-left:@menu-width-collapsed;
+}
+
+.app-page-container {
+  margin-top:@navbar-height;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-lg-min) { 
+  .app-menu{
+    width:@menu-width-full;
+  }
+  
+  .app-main {
+    width:~"calc(100% - @{menu-width-full})";
+  }
+
+  .app-header{
+    width:~"calc(100% - @{menu-width-full})";
+    margin-left:@menu-width-full;
+  }
+}

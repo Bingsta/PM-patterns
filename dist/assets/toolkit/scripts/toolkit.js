@@ -10383,8 +10383,13 @@ module.exports = g;
  */
 
 
-global.jQuery = __webpack_require__(1);
+global.jQuery = global.$ = __webpack_require__(1);
 var bootstrap = __webpack_require__(0);
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),

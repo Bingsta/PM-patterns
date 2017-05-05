@@ -36,6 +36,20 @@
 
 .f-item-preview {
 	@include clearfix;
+  > .modal:first-child {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+    opacity:1;
+  }
+  > .modal:first-child.fade .modal-dialog{
+      
+        transform: translate(0,0);
+    }
 }
 
 .f-item-border-bottom {

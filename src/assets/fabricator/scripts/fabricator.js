@@ -8,7 +8,6 @@ require('./prism');
  */
 var fabricator = window.fabricator = {};
 
-
 /**
  * Default options
  * @type {Object}

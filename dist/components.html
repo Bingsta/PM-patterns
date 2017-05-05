@@ -84,10 +84,25 @@
 							<a href="components.html#06-badges">Badges</a>
 						</li>
 						<li>
-							<a href="components.html#07-page-header">Page Header</a>
+							<a href="components.html#07-labels">Labels</a>
 						</li>
 						<li>
-							<a href="components.html#08-alerts">Alerts</a>
+							<a href="components.html#08-page-header">Page Header</a>
+						</li>
+						<li>
+							<a href="components.html#09-alerts">Alerts</a>
+						</li>
+						<li>
+							<a href="components.html#10-tooltip">Tooltip</a>
+						</li>
+						<li>
+							<a href="components.html#11-popovers">Popovers</a>
+						</li>
+						<li>
+							<a href="components.html#12-media-object">Media Object</a>
+						</li>
+						<li>
+							<a href="components.html#13-list-groups">List Groups</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
@@ -119,10 +134,22 @@
 							<a href="structures.html#03-navs">Navs</a>
 						</li>
 						<li>
-							<a href="structures.html#04-input-groups">Input Groups</a>
+							<a href="structures.html#04-forms">Forms</a>
 						</li>
 						<li>
-							<a href="structures.html#forms">Forms</a>
+							<a href="structures.html#05-modals">Modals</a>
+						</li>
+						<li>
+							<a href="structures.html#06-accordian">Accordian</a>
+						</li>
+						<li>
+							<a href="structures.html#07-navbar">Navbar</a>
+						</li>
+						<li>
+							<a href="structures.html#08-page">Page</a>
+						</li>
+						<li>
+							<a href="structures.html#09-menu">Menu</a>
 						</li>
 					</ul>
 				</li>
@@ -130,6 +157,9 @@
 				<li>
 					<a href="pages.html" class="f-menu__heading">Pages</a>
 					<ul>
+						<li>
+							<a href="pages/app.html">App</a>
+						</li>
 						<li>
 							<a href="pages/home.html">Home</a>
 						</li>
@@ -275,6 +305,9 @@
 <button type="button" class="btn btn-primary ">
     Primary
 </button>&nbsp;
+<button type="button" class="btn btn-accent ">
+    Accent
+</button>&nbsp;
 <button type="button" class="btn btn-success ">
     Success
 </button>&nbsp;
@@ -294,6 +327,9 @@
 &lt;/button&gt;&amp;nbsp;
 &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary &quot;&gt;
     Primary
+&lt;/button&gt;&amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-accent &quot;&gt;
+    Accent
 &lt;/button&gt;&amp;nbsp;
 &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success &quot;&gt;
     Success
@@ -359,7 +395,7 @@
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
 	</div>
-		<div class="f-item-group" id="03-lists.ordered">
+		<div class="f-item-group" id="03-lists.01-ordered">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Ordered</h3>
 				<div class="f-item-controls">
@@ -387,7 +423,7 @@
 </div>
 
 		</div>
-		<div class="f-item-group" id="03-lists.unordered">
+		<div class="f-item-group" id="03-lists.02-unordered">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Unordered</h3>
 				<div class="f-item-controls">
@@ -412,6 +448,40 @@
 	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="03-lists.03-definition">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Definition</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<dl>
+	<dt>Description lists</dt>
+	<dd>A description list is perfect for defining terms.</dd>
+	<dt>Euismod</dt>
+	<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</dd>
+	<dt>Malesuada porta</dt>
+	<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+</dl>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;dl&gt;
+	&lt;dt&gt;Description lists&lt;/dt&gt;
+	&lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+	&lt;dt&gt;Euismod&lt;/dt&gt;
+	&lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+	&lt;dt&gt;Malesuada porta&lt;/dt&gt;
+	&lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
 </div>
 
 		</div>
@@ -1206,17 +1276,111 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<span class="badge">42</span>
+	<span class="badge badge-warning">42</span>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class&#x3D;&quot;badge&quot;&gt;42&lt;/span&gt;</code></pre>
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;</code></pre>
 </div>
 
 
 </div>
 
 
-<div class="f-item-group" id="07-page-header">
+<div class="f-item-group" id="07-labels">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Labels</h2>
+	</div>
+		<div class="f-item-group" id="07-labels.01-label">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Label</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>These are notes associated with this <code>button</code> component.</p>
+
+</div>
+<div class="f-item-preview">
+	<span class="label label-default ">
+    Default
+</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;label label-default &quot;&gt;
+    Default
+&lt;/span&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="07-labels.02-variations">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Variations</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<span class="label label-default ">
+    Default
+</span>&nbsp;
+<span class="label label-primary ">
+    Primary
+</span>&nbsp;
+<span class="label label-success ">
+    Success
+</span>&nbsp;
+<span class="label label-warning ">
+    Warning
+</span>&nbsp;
+<span class="label label-danger ">
+    Danger
+</span>&nbsp;
+<span class="label label-info ">
+    Info
+</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;label label-default &quot;&gt;
+    Default
+&lt;/span&gt;&amp;nbsp;
+&lt;span class&#x3D;&quot;label label-primary &quot;&gt;
+    Primary
+&lt;/span&gt;&amp;nbsp;
+&lt;span class&#x3D;&quot;label label-success &quot;&gt;
+    Success
+&lt;/span&gt;&amp;nbsp;
+&lt;span class&#x3D;&quot;label label-warning &quot;&gt;
+    Warning
+&lt;/span&gt;&amp;nbsp;
+&lt;span class&#x3D;&quot;label label-danger &quot;&gt;
+    Danger
+&lt;/span&gt;&amp;nbsp;
+&lt;span class&#x3D;&quot;label label-info &quot;&gt;
+    Info
+&lt;/span&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="08-page-header">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Page Header</h2>
@@ -1230,12 +1394,12 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<div class="page-header">
+	<div class="page-header bg-primary">
 	<h1>Example page header <small>Subtext for header</small></h1>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;page-header&quot;&gt;
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;page-header bg-primary&quot;&gt;
 	&lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -1244,12 +1408,12 @@
 </div>
 
 
-<div class="f-item-group" id="08-alerts">
+<div class="f-item-group" id="09-alerts">
 
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Alerts</h2>
 	</div>
-		<div class="f-item-group" id="08-alerts.01-alert">
+		<div class="f-item-group" id="09-alerts.01-alert">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Alert</h3>
 				<div class="f-item-controls">
@@ -1273,7 +1437,7 @@
 </div>
 
 		</div>
-		<div class="f-item-group" id="08-alerts.02-dismissable">
+		<div class="f-item-group" id="09-alerts.02-dismissable">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Dismissable</h3>
 				<div class="f-item-controls">
@@ -1299,7 +1463,7 @@
 </div>
 
 		</div>
-		<div class="f-item-group" id="08-alerts.03-variations">
+		<div class="f-item-group" id="09-alerts.03-variations">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Variations</h3>
 				<div class="f-item-controls">
@@ -1341,6 +1505,178 @@
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="10-tooltip">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Tooltip</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button> &nbsp;
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button> &nbsp;
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button> &nbsp;
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+<br/>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;left&quot; title&#x3D;&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;top&quot; title&#x3D;&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+&lt;br/&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="11-popovers">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Popovers</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+<br/><br/>
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button> &nbsp;
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button> &nbsp;
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on bottom
+</button> &nbsp;
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+<br/><br/>
+<a tabindex="0" class="btn  btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-lg btn-danger&quot; data-toggle&#x3D;&quot;popover&quot; title&#x3D;&quot;Popover title&quot; data-content&#x3D;&quot;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&quot;&gt;Click to toggle popover&lt;/button&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-container&#x3D;&quot;body&quot; data-toggle&#x3D;&quot;popover&quot; data-placement&#x3D;&quot;left&quot; data-content&#x3D;&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on left
+&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-container&#x3D;&quot;body&quot; data-toggle&#x3D;&quot;popover&quot; data-placement&#x3D;&quot;top&quot; data-content&#x3D;&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on top
+&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-container&#x3D;&quot;body&quot; data-toggle&#x3D;&quot;popover&quot; data-placement&#x3D;&quot;bottom&quot; data-content&#x3D;&quot;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on bottom
+&lt;/button&gt; &amp;nbsp;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-container&#x3D;&quot;body&quot; data-toggle&#x3D;&quot;popover&quot; data-placement&#x3D;&quot;right&quot; data-content&#x3D;&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on right
+&lt;/button&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;a tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;btn  btn-default&quot; role&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;popover&quot; data-trigger&#x3D;&quot;focus&quot; title&#x3D;&quot;Dismissible popover&quot; data-content&#x3D;&quot;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&quot;&gt;Dismissible popover&lt;/a&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="12-media-object">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Media Object</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="media">
+	<div class="media-left">
+		<a href="#">
+			<img class="media-object" src="http://placehold.it/350x150">
+		</a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+		In sit amet pellentesque justo, sit amet tempor nunc. Nulla felis quam, sollicitudin in est ac, elementum cursus mi. Duis eleifend rhoncus dolor vel sodales. Donec quis auctor nulla. Nam massa dolor, tincidunt sed convallis ut, maximus et magna. Proin
+		fringilla egestas sapien vitae imperdiet. Duis mauris ipsum, imperdiet sed ultricies condimentum, accumsan eu est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis
+		in faucibus. Pellentesque nec ipsum id velit tempor porttitor a et nibh. Fusce ullamcorper elementum sapien, nec posuere sapien rhoncus nec. In fringilla commodo tortor. Nulla varius neque dolor, mattis pharetra sem eleifend non.
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;media&quot;&gt;
+	&lt;div class&#x3D;&quot;media-left&quot;&gt;
+		&lt;a href&#x3D;&quot;#&quot;&gt;
+			&lt;img class&#x3D;&quot;media-object&quot; src&#x3D;&quot;http://placehold.it/350x150&quot;&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;media-body&quot;&gt;
+		&lt;h4 class&#x3D;&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+		In sit amet pellentesque justo, sit amet tempor nunc. Nulla felis quam, sollicitudin in est ac, elementum cursus mi. Duis eleifend rhoncus dolor vel sodales. Donec quis auctor nulla. Nam massa dolor, tincidunt sed convallis ut, maximus et magna. Proin
+		fringilla egestas sapien vitae imperdiet. Duis mauris ipsum, imperdiet sed ultricies condimentum, accumsan eu est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis
+		in faucibus. Pellentesque nec ipsum id velit tempor porttitor a et nibh. Fusce ullamcorper elementum sapien, nec posuere sapien rhoncus nec. In fringilla commodo tortor. Nulla varius neque dolor, mattis pharetra sem eleifend non.
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="13-list-groups">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">List Groups</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="list-group">
+	<li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+	<li class="list-group-item"><span class="badge">13</span>Dapibus ac facilisis in</li>
+	<li class="list-group-item"><span class="badge">1</span>Morbi leo risus</li>
+	<li class="list-group-item"><span class="badge">60</span>Porta ac consectetur ac</li>
+	<li class="list-group-item"><span class="badge">167</span>Vestibulum at eros</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;list-group&quot;&gt;
+	&lt;li class&#x3D;&quot;list-group-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;14&lt;/span&gt;Cras justo odio&lt;/li&gt;
+	&lt;li class&#x3D;&quot;list-group-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;13&lt;/span&gt;Dapibus ac facilisis in&lt;/li&gt;
+	&lt;li class&#x3D;&quot;list-group-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;1&lt;/span&gt;Morbi leo risus&lt;/li&gt;
+	&lt;li class&#x3D;&quot;list-group-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;60&lt;/span&gt;Porta ac consectetur ac&lt;/li&gt;
+	&lt;li class&#x3D;&quot;list-group-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;167&lt;/span&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
 
 </div>
 

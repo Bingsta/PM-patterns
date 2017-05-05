@@ -9,7 +9,6 @@
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @headings-font-family;
-  font-weight: @headings-font-weight;
   line-height: @headings-line-height;
   color: @headings-color;
 
@@ -26,6 +25,7 @@ h2, .h2,
 h3, .h3 {
   margin-top: @line-height-computed;
   margin-bottom: (@line-height-computed / 2);
+  font-weight: @light;
 
   small,
   .small {
@@ -37,6 +37,7 @@ h5, .h5,
 h6, .h6 {
   margin-top: (@line-height-computed / 2);
   margin-bottom: (@line-height-computed / 2);
+  font-weight: @semi-bold;
 
   small,
   .small {
@@ -126,7 +127,11 @@ mark,
   // automatically.
   color: #fff;
   .bg-variant(@brand-primary);
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
+    color:rgba(255,255,255,0.50);
+  } 
 }
+
 .bg-success {
   .bg-variant(@state-success-bg);
 }
@@ -145,8 +150,7 @@ mark,
 // -------------------------
 
 .page-header {
-  padding-bottom: ((@line-height-computed / 2) - 1);
-  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  padding: (@line-height-computed * 2) @padding-base-horizontal @line-height-computed;
   border-bottom: 1px solid @page-header-border-color;
 }
 
@@ -195,7 +199,7 @@ dd {
   line-height: @line-height-base;
 }
 dt {
-  font-weight: bold;
+  font-weight: @semi-bold;
 }
 dd {
   margin-left: 0; // Undo browser default

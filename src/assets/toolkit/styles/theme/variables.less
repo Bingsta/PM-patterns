@@ -14,7 +14,7 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #385797;
+@brand-primary:         #13547a;
 @brand-accent:          #fe4d01;
 
 @brand-success:         #33cc99;
@@ -44,7 +44,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -61,6 +61,10 @@
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
+@light:     300;
+@semi-bold: 600;
+@bold:      700;
+
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
@@ -68,7 +72,6 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -169,6 +172,10 @@
 @btn-danger-color:               #fff;
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-accent-color:               #fff;
+@btn-accent-bg:                  @brand-accent;
+@btn-accent-border:              darken(@btn-accent-bg, 5%);
 
 @btn-link-disabled-color:        @gray-light;
 
@@ -359,9 +366,9 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
@@ -369,6 +376,10 @@
 @navbar-default-color:             #777;
 @navbar-default-bg:                #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+@navbar-avatar-height: 30px;
+@navbar-link-line-height: @navbar-avatar-height;
+@navbar-link-padding-vertical: calc((@navbar-height - @navbar-avatar-height) / 2);
 
 // Navbar links
 @navbar-default-link-color:                #777;
@@ -393,15 +404,15 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #222;
-@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-bg:                         darken(@brand-primary, 11%);
+@navbar-inverse-border:                     darken(@brand-primary, 13%);
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 lighten(@gray-light, 15%);
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-active-bg:             lighten(@brand-primary, 5%);
 @navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
@@ -421,7 +432,7 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          .5rem 1.5rem;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;
@@ -773,14 +784,14 @@
 @badge-color:                 #fff;
 //** Linked badge text color on hover
 @badge-link-hover-color:      #fff;
-@badge-bg:                    @gray-light;
+@badge-bg:                    @brand-accent;
 
 //** Badge text color in active nav link
 @badge-active-color:          @link-color;
 //** Badge background color in active nav link
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           bold;
+@badge-font-weight:           @semi-bold;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 
@@ -862,7 +873,9 @@
 //** Blockquote border color
 @blockquote-border-color:     @gray-lighter;
 //** Page header border color
-@page-header-border-color:    @gray-lighter;
+@page-header-border-color:    darken(@brand-primary, 10%);
+//** Page header border color
+@page-header-bg:    @lighten(@brand-primary, 10%);
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Point at which .dl-horizontal becomes horizontal

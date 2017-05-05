@@ -84,10 +84,25 @@
 							<a href="components.html#06-badges">Badges</a>
 						</li>
 						<li>
-							<a href="components.html#07-page-header">Page Header</a>
+							<a href="components.html#07-labels">Labels</a>
 						</li>
 						<li>
-							<a href="components.html#08-alerts">Alerts</a>
+							<a href="components.html#08-page-header">Page Header</a>
+						</li>
+						<li>
+							<a href="components.html#09-alerts">Alerts</a>
+						</li>
+						<li>
+							<a href="components.html#10-tooltip">Tooltip</a>
+						</li>
+						<li>
+							<a href="components.html#11-popovers">Popovers</a>
+						</li>
+						<li>
+							<a href="components.html#12-media-object">Media Object</a>
+						</li>
+						<li>
+							<a href="components.html#13-list-groups">List Groups</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
@@ -119,10 +134,22 @@
 							<a href="structures.html#03-navs">Navs</a>
 						</li>
 						<li>
-							<a href="structures.html#04-input-groups">Input Groups</a>
+							<a href="structures.html#04-forms">Forms</a>
 						</li>
 						<li>
-							<a href="structures.html#forms">Forms</a>
+							<a href="structures.html#05-modals">Modals</a>
+						</li>
+						<li>
+							<a href="structures.html#06-accordian">Accordian</a>
+						</li>
+						<li>
+							<a href="structures.html#07-navbar">Navbar</a>
+						</li>
+						<li>
+							<a href="structures.html#08-page">Page</a>
+						</li>
+						<li>
+							<a href="structures.html#09-menu">Menu</a>
 						</li>
 					</ul>
 				</li>
@@ -130,6 +157,9 @@
 				<li>
 					<a href="pages.html" class="f-menu__heading">Pages</a>
 					<ul>
+						<li>
+							<a href="pages/app.html">App</a>
+						</li>
 						<li>
 							<a href="pages/home.html">Home</a>
 						</li>
@@ -309,16 +339,48 @@
 </div>
 <div class="f-item-preview">
 	<div class="btn-group" role="group" aria-label="...">
-	<button type="button" class="btn btn-default">Left</button>
-	<button type="button" class="btn btn-default">Middle</button>
-	<button type="button" class="btn btn-default">Right</button>
+	<button type="button" class="btn btn-default ">
+      Left
+  </button> <button type="button" class="btn btn-success ">
+      Middle
+  </button>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action <span class="caret"></span>
+    </button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li class="dropdown-header">Dropdown header</li>
+			<li><a href="#">Something else here</a></li>
+			<li class="disabled"><a href="#">Disabled link</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;btn-group&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;...&quot;&gt;
-	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
-	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
-	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default &quot;&gt;
+      Left
+  &lt;/button&gt; &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success &quot;&gt;
+      Middle
+  &lt;/button&gt;
+	&lt;div class&#x3D;&quot;btn-group&quot;&gt;
+		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+      Action &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+		&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+			&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+			&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -338,38 +400,134 @@
 <div class="f-item-preview">
 	<div class="btn-toolbar" role="toolbar" aria-label="...">
 	<div class="btn-group" role="group" aria-label="...">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
+		<button type="button" class="btn btn-default ">
+        Left
+    </button> <button type="button" class="btn btn-success ">
+        Middle
+    </button>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+      </button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li class="dropdown-header">Dropdown header</li>
+				<li><a href="#">Something else here</a></li>
+				<li class="disabled"><a href="#">Disabled link</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="btn-group" role="group" aria-label="...">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
+		<button type="button" class="btn btn-default ">
+        Left
+    </button> <button type="button" class="btn btn-success ">
+        Middle
+    </button>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+      </button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li class="dropdown-header">Dropdown header</li>
+				<li><a href="#">Something else here</a></li>
+				<li class="disabled"><a href="#">Disabled link</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="btn-group" role="group" aria-label="...">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
+		<button type="button" class="btn btn-default ">
+        Left
+    </button> <button type="button" class="btn btn-success ">
+        Middle
+    </button>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action <span class="caret"></span>
+      </button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li class="dropdown-header">Dropdown header</li>
+				<li><a href="#">Something else here</a></li>
+				<li class="disabled"><a href="#">Disabled link</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;btn-toolbar&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;...&quot;&gt;
 	&lt;div class&#x3D;&quot;btn-group&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;...&quot;&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default &quot;&gt;
+        Left
+    &lt;/button&gt; &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success &quot;&gt;
+        Middle
+    &lt;/button&gt;
+		&lt;div class&#x3D;&quot;btn-group&quot;&gt;
+			&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+        Action &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+			&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+				&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;btn-group&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;...&quot;&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default &quot;&gt;
+        Left
+    &lt;/button&gt; &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success &quot;&gt;
+        Middle
+    &lt;/button&gt;
+		&lt;div class&#x3D;&quot;btn-group&quot;&gt;
+			&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+        Action &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+			&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+				&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;btn-group&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;...&quot;&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
-		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+		&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default &quot;&gt;
+        Left
+    &lt;/button&gt; &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success &quot;&gt;
+        Middle
+    &lt;/button&gt;
+		&lt;div class&#x3D;&quot;btn-group&quot;&gt;
+			&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+        Action &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+			&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+				&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -435,7 +593,7 @@
 	<ul class="nav nav-tabs">
 	<li role="presentation" class="active"><a href="#">Home</a></li>
 	<li role="presentation"><a href="#">Profile</a></li>
-	<li role="presentation"><a href="#">Messages</a></li>
+	<li role="presentation"><a href="#">Messages <span class="badge badge-warning">42</span></a></li>
 	<li role="presentation" class="disabled"><a href="#">Disabled</a></li>
 	<li role="presentation" class="dropdown">
 		<a role="button" class="dropdown-toggle" data-toggle="dropdown" href="#" r aria-haspopup="true" aria-expanded="false">
@@ -457,7 +615,7 @@
 	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;nav nav-tabs&quot;&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
-	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Messages &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;dropdown&quot;&gt;
 		&lt;a role&#x3D;&quot;button&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; href&#x3D;&quot;#&quot; r aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
@@ -493,7 +651,7 @@
 	<ul class="nav nav-pills">
 	<li role="presentation" class="active"><a href="#">Home</a></li>
 	<li role="presentation"><a href="#">Profile</a></li>
-	<li role="presentation"><a href="#">Messages</a></li>
+	<li role="presentation"><a href="#">Messages  <span class="badge badge-warning">42</span></a></li>
 	<li role="presentation" class="disabled"><a href="#">Disabled</a></li>
 	<li role="presentation" class="dropdown">
 		<a role="button" class="dropdown-toggle" data-toggle="dropdown" href="#" r aria-haspopup="true" aria-expanded="false">
@@ -515,7 +673,7 @@
 	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;nav nav-pills&quot;&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
-	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Messages  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled&lt;/a&gt;&lt;/li&gt;
 	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;dropdown&quot;&gt;
 		&lt;a role&#x3D;&quot;button&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; href&#x3D;&quot;#&quot; r aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
@@ -535,46 +693,50 @@
 </div>
 
 		</div>
-
-</div>
-
-
-<div class="f-item-group" id="04-input-groups">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Input Groups</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
+		<div class="f-item-group" id="03-navs.03-stacked">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Stacked</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<div class="input-group">
-	<span class="input-group-addon" id="basic-addon1">@</span>
-	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
+	<ul class="nav nav-pills nav-stacked">
+	<li role="presentation" class="active"><a href="#"><strong><i class="icon-meter"></i>&nbsp;&nbsp;Home dashboard</strong></a></li>
+	<li role="presentation" class="nav-item-inset"><a href="#"><i class="icon-certificate"></i>&nbsp;&nbsp;Tenancies</a></li>
+	<li role="presentation" class="nav-item-inset"><a href="#"><i class="icon-home6"></i>&nbsp;&nbsp;Properties</a></li>
+	<li role="presentation" class="nav-item-inset"><a href="#"><i class="icon-user4"></i>&nbsp;&nbsp;Tenants</a></li>
+	<li role="presentation" class="nav-item-inset"><a href="#"><i class="icon-user3"></i>&nbsp;&nbsp;Landlords</a></li>
+	<li role="presentation" class="nav-item-inset"><a href="#"><i class="icon-hammer-wrench"></i>&nbsp;&nbsp;Maintenance tickets  <span class="badge badge-warning">42</span></a></li>
+</ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input-group&quot;&gt;
-	&lt;span class&#x3D;&quot;input-group-addon&quot; id&#x3D;&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
-	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Username&quot; aria-describedby&#x3D;&quot;basic-addon1&quot;&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;nav nav-pills nav-stacked&quot;&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;strong&gt;&lt;i class&#x3D;&quot;icon-meter&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Home dashboard&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;nav-item-inset&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;icon-certificate&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Tenancies&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;nav-item-inset&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;icon-home6&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Properties&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;nav-item-inset&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;icon-user4&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Tenants&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;nav-item-inset&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;icon-user3&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Landlords&lt;/a&gt;&lt;/li&gt;
+	&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;nav-item-inset&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;icon-hammer-wrench&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;Maintenance tickets  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+
 </div>
 
 
-</div>
-
-
-<div class="f-item-group" id="forms">
+<div class="f-item-group" id="04-forms">
 
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Forms</h2>
 	</div>
-		<div class="f-item-group" id="forms.01-form">
+		<div class="f-item-group" id="04-forms.01-form">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Form</h3>
 				<div class="f-item-controls">
@@ -636,7 +798,7 @@
 </div>
 
 		</div>
-		<div class="f-item-group" id="forms.02-inline">
+		<div class="f-item-group" id="04-forms.02-inline">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Inline</h3>
 				<div class="f-item-controls">
@@ -676,7 +838,7 @@
 </div>
 
 		</div>
-		<div class="f-item-group" id="forms.03-horizontal">
+		<div class="f-item-group" id="04-forms.03-horizontal">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<h3 class="f-item-heading">Horizontal</h3>
 				<div class="f-item-controls">
@@ -750,6 +912,563 @@
 </div>
 
 		</div>
+		<div class="f-item-group" id="04-forms.04-input-groups">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Input Groups</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="input-group">
+	<span class="input-group-addon" id="basic-addon1">@</span>
+	<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input-group&quot;&gt;
+	&lt;span class&#x3D;&quot;input-group-addon&quot; id&#x3D;&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Username&quot; aria-describedby&#x3D;&quot;basic-addon1&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="05-modals">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Modals</h2>
+	</div>
+		<div class="f-item-group" id="05-modals.01-modal">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Modal</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<p>One fine body&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;modal fade&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot;&gt;
+	&lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+		&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+			&lt;div class&#x3D;&quot;modal-header&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+				&lt;h4 class&#x3D;&quot;modal-title&quot;&gt;Modal title&lt;/h4&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;modal-body&quot;&gt;
+				&lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;
+	&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;
+&lt;!-- /.modal --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="05-modals.02-example">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Example</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Button trigger modal --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-lg&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#myModal&quot;&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;myModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;myModalLabel&quot;&gt;
+	&lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+		&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+			&lt;div class&#x3D;&quot;modal-header&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+				&lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;modal-body&quot;&gt;
+				...
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="06-accordian">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Accordian</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			<div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingTwo">
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+			</h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			<div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingThree">
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="panel-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;panel-group&quot; id&#x3D;&quot;accordion&quot; role&#x3D;&quot;tablist&quot; aria-multiselectable&#x3D;&quot;true&quot;&gt;
+	&lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+		&lt;div class&#x3D;&quot;panel-heading&quot; role&#x3D;&quot;tab&quot; id&#x3D;&quot;headingOne&quot;&gt;
+			&lt;h4 class&#x3D;&quot;panel-title&quot;&gt;
+				&lt;a role&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-parent&#x3D;&quot;#accordion&quot; href&#x3D;&quot;#collapseOne&quot; aria-expanded&#x3D;&quot;true&quot; aria-controls&#x3D;&quot;collapseOne&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+			&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;div id&#x3D;&quot;collapseOne&quot; class&#x3D;&quot;panel-collapse collapse in&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;headingOne&quot;&gt;
+			&lt;div class&#x3D;&quot;panel-body&quot;&gt;
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+		&lt;div class&#x3D;&quot;panel-heading&quot; role&#x3D;&quot;tab&quot; id&#x3D;&quot;headingTwo&quot;&gt;
+			&lt;h4 class&#x3D;&quot;panel-title&quot;&gt;
+				&lt;a class&#x3D;&quot;collapsed&quot; role&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-parent&#x3D;&quot;#accordion&quot; href&#x3D;&quot;#collapseTwo&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+			&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;div id&#x3D;&quot;collapseTwo&quot; class&#x3D;&quot;panel-collapse collapse&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;headingTwo&quot;&gt;
+			&lt;div class&#x3D;&quot;panel-body&quot;&gt;
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+		&lt;div class&#x3D;&quot;panel-heading&quot; role&#x3D;&quot;tab&quot; id&#x3D;&quot;headingThree&quot;&gt;
+			&lt;h4 class&#x3D;&quot;panel-title&quot;&gt;
+				&lt;a class&#x3D;&quot;collapsed&quot; role&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-parent&#x3D;&quot;#accordion&quot; href&#x3D;&quot;#collapseThree&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+			&lt;/h4&gt;
+		&lt;/div&gt;
+		&lt;div id&#x3D;&quot;collapseThree&quot; class&#x3D;&quot;panel-collapse collapse&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;headingThree&quot;&gt;
+			&lt;div class&#x3D;&quot;panel-body&quot;&gt;
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+				on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+				denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="07-navbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Navbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<form class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+			</form>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-accent navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="icon-plus2"></i> <span class="visible-lg-inline">Add a... </span><span class="caret"></span>
+          </button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li class="dropdown-header">Dropdown header</li>
+					<li><a href="#">Something else here</a></li>
+					<li class="disabled"><a href="#">Disabled link</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><i class="icon-calendar"></i><span class="visible-xs-inline">&nbsp;&nbsp;Calendar</span></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Key manager"><i class="icon-key"></i><span class="visible-xs-inline">&nbsp;&nbsp;Key manager</span></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="icon-bubble4"></i><span class="visible-xs-inline">&nbsp;&nbsp;Messages</span></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="To-dos"><i class="icon-checkbox-checked"></i><span class="visible-xs-inline">&nbsp;&nbsp;To-dos</span></a></li>
+				<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications"><i class="icon-notification"></i><span class="visible-xs-inline">&nbsp;&nbsp;Notifications</span>&nbsp;&nbsp;<span class="badge badge-warning">42</span></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle" src="http://placehold.it/30x30/555/fe4d01?text=.">&nbsp;&nbsp;Lee Crosby <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-inverse&quot;&gt;
+	&lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+		&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		&lt;div class&#x3D;&quot;navbar-header&quot;&gt;
+			&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;navbar-toggle collapsed&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#bs-example-navbar-collapse-1&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class&#x3D;&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		&lt;div class&#x3D;&quot;collapse navbar-collapse&quot; id&#x3D;&quot;bs-example-navbar-collapse-1&quot;&gt;
+
+			&lt;form class&#x3D;&quot;navbar-form navbar-left&quot;&gt;
+				&lt;div class&#x3D;&quot;form-group&quot;&gt;
+					&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Search&quot;&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+
+			&lt;div class&#x3D;&quot;btn-group&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-accent navbar-btn dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+           &lt;i class&#x3D;&quot;icon-plus2&quot;&gt;&lt;/i&gt; &lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Add a... &lt;/span&gt;&lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+				&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+					&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+					&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+					&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+					&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+					&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+
+			&lt;ul class&#x3D;&quot;nav navbar-nav navbar-right&quot;&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;Calendar&quot;&gt;&lt;i class&#x3D;&quot;icon-calendar&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;visible-xs-inline&quot;&gt;&amp;nbsp;&amp;nbsp;Calendar&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;Key manager&quot;&gt;&lt;i class&#x3D;&quot;icon-key&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;visible-xs-inline&quot;&gt;&amp;nbsp;&amp;nbsp;Key manager&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;Messages&quot;&gt;&lt;i class&#x3D;&quot;icon-bubble4&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;visible-xs-inline&quot;&gt;&amp;nbsp;&amp;nbsp;Messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;To-dos&quot;&gt;&lt;i class&#x3D;&quot;icon-checkbox-checked&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;visible-xs-inline&quot;&gt;&amp;nbsp;&amp;nbsp;To-dos&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;bottom&quot; title&#x3D;&quot;Notifications&quot;&gt;&lt;i class&#x3D;&quot;icon-notification&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;visible-xs-inline&quot;&gt;&amp;nbsp;&amp;nbsp;Notifications&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;dropdown&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;http://placehold.it/30x30/555/fe4d01?text&#x3D;.&quot;&gt;&amp;nbsp;&amp;nbsp;Lee Crosby &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+						&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;!-- /.navbar-collapse --&gt;
+	&lt;/div&gt;
+	&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="08-page">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Page</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="page-header bg-primary">
+	<h1>Example page header <small>Subtext for header</small></h1>
+</div>
+<div class="page-content container-fluid">
+	<h2>Page content</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae arcu quam. Integer gravida ipsum id consectetur condimentum. Sed non felis nec velit blandit molestie. In ultrices dolor nec risus aliquet tincidunt. Etiam accumsan ante elit,
+		in porta justo mattis et. Cras nec condimentum enim. Fusce porta, justo eu bibendum molestie, arcu turpis scelerisque odio, non auctor leo massa sit amet nisi. Curabitur eu turpis nibh. Aenean metus purus, semper quis ultrices in, faucibus eu dolor.
+		Donec suscipit eros vel diam eleifend sagittis. Praesent ligula nisl, ornare ut mauris at, pellentesque fermentum tellus. Vestibulum lacinia iaculis massa vel maximus. Curabitur ac finibus dolor. Nulla imperdiet fermentum purus, in sodales lectus vehicula
+		vitae. In hac habitasse platea dictumst. Quisque a mauris a ligula consequat pretium.
+	</p>
+	<p>
+		Proin lectus risus, malesuada eget egestas at, pretium vel turpis. Cras sed sapien mauris. Vivamus sodales tellus ex, eget consequat leo vehicula vel. Phasellus auctor sit amet arcu sed volutpat. Nam maximus ultrices elementum. Cras consequat sodales
+		lorem nec viverra. Integer urna libero, porta venenatis congue non, porttitor sit amet nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum libero et vulputate placerat. Praesent tincidunt
+		augue eget risus imperdiet, a pharetra ipsum varius. Quisque id pharetra odio.
+	</p>
+	<p>
+		Fusce sem velit, elementum molestie efficitur rhoncus, tempus quis lorem. Mauris aliquam lectus egestas, accumsan est vel, fringilla sem. Duis eu turpis a metus facilisis feugiat id ac diam. Vivamus eu diam a ex tincidunt elementum. Duis efficitur, ex
+		ac ultricies hendrerit, enim nibh maximus ante, eget sodales sem enim sit amet risus. Quisque sed dictum nulla. Aenean ullamcorper risus ac turpis accumsan, ut cursus leo volutpat. Fusce varius sapien nec metus ornare, ac gravida velit pharetra.
+	</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;page-header bg-primary&quot;&gt;
+	&lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;page-content container-fluid&quot;&gt;
+	&lt;h2&gt;Page content&lt;/h2&gt;
+	&lt;p&gt;
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae arcu quam. Integer gravida ipsum id consectetur condimentum. Sed non felis nec velit blandit molestie. In ultrices dolor nec risus aliquet tincidunt. Etiam accumsan ante elit,
+		in porta justo mattis et. Cras nec condimentum enim. Fusce porta, justo eu bibendum molestie, arcu turpis scelerisque odio, non auctor leo massa sit amet nisi. Curabitur eu turpis nibh. Aenean metus purus, semper quis ultrices in, faucibus eu dolor.
+		Donec suscipit eros vel diam eleifend sagittis. Praesent ligula nisl, ornare ut mauris at, pellentesque fermentum tellus. Vestibulum lacinia iaculis massa vel maximus. Curabitur ac finibus dolor. Nulla imperdiet fermentum purus, in sodales lectus vehicula
+		vitae. In hac habitasse platea dictumst. Quisque a mauris a ligula consequat pretium.
+	&lt;/p&gt;
+	&lt;p&gt;
+		Proin lectus risus, malesuada eget egestas at, pretium vel turpis. Cras sed sapien mauris. Vivamus sodales tellus ex, eget consequat leo vehicula vel. Phasellus auctor sit amet arcu sed volutpat. Nam maximus ultrices elementum. Cras consequat sodales
+		lorem nec viverra. Integer urna libero, porta venenatis congue non, porttitor sit amet nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum libero et vulputate placerat. Praesent tincidunt
+		augue eget risus imperdiet, a pharetra ipsum varius. Quisque id pharetra odio.
+	&lt;/p&gt;
+	&lt;p&gt;
+		Fusce sem velit, elementum molestie efficitur rhoncus, tempus quis lorem. Mauris aliquam lectus egestas, accumsan est vel, fringilla sem. Duis eu turpis a metus facilisis feugiat id ac diam. Vivamus eu diam a ex tincidunt elementum. Duis efficitur, ex
+		ac ultricies hendrerit, enim nibh maximus ante, eget sodales sem enim sit amet risus. Quisque sed dictum nulla. Aenean ullamcorper risus ac turpis accumsan, ut cursus leo volutpat. Fusce varius sapien nec metus ornare, ac gravida velit pharetra.
+	&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="09-menu">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Menu</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<aside class="app-menu">
+	<div class="app-brand">
+		<img src="http://placehold.it/220x40/555/fe4d01?text=PM+logo">
+	</div>
+	<div class="app-menu-group">
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="active"><a href="#" data-toggle="tooltip" data-placement="right" title="Home dashboard"><strong><i class="icon-meter"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Home dashboard</span></strong></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Tenancies"><i class="icon-certificate"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Tenancies</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Properties"><i class="icon-home6"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Properties</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Tenants"><i class="icon-user4"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Tenants</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Landlords"><i class="icon-user3"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Landlords</a></span>
+			</li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Maintenance tickets"><i class="icon-hammer-wrench"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Maintenance tickets  <span class="badge badge-warning">42</span></span></a></li>
+		</ul>
+	</div>
+	<div class="app-menu-group">
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Accounting dashboard"><strong><i class="icon-coin-pound"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Accounting dashboard</span></strong></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Sales invoices"><i class="icon-drawer-out"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Sales invoices</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Purchase invoices"><i class="icon-drawer-in"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Purchase invoices</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Client &amp; deposit accounts"><i class="icon-safe"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Client &amp; deposit accounts</span></a></li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="Sub accounts"><i class="icon-user3"></i>&nbsp;&nbsp;<span class="visible-lg-inline">Sub accounts</a></span>
+			</li>
+			<li role="presentation"><a href="#" data-toggle="tooltip" data-placement="right" title="System pots"><i class="icon-cabinet"></i>&nbsp;&nbsp;<span class="visible-lg-inline">System pots</span></a></li>
+		</ul>
+	</div>
+</aside>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;aside class&#x3D;&quot;app-menu&quot;&gt;
+	&lt;div class&#x3D;&quot;app-brand&quot;&gt;
+		&lt;img src&#x3D;&quot;http://placehold.it/220x40/555/fe4d01?text&#x3D;PM+logo&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;app-menu-group&quot;&gt;
+		&lt;ul class&#x3D;&quot;nav nav-pills nav-stacked&quot;&gt;
+			&lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Home dashboard&quot;&gt;&lt;strong&gt;&lt;i class&#x3D;&quot;icon-meter&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Home dashboard&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Tenancies&quot;&gt;&lt;i class&#x3D;&quot;icon-certificate&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Tenancies&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Properties&quot;&gt;&lt;i class&#x3D;&quot;icon-home6&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Properties&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Tenants&quot;&gt;&lt;i class&#x3D;&quot;icon-user4&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Tenants&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Landlords&quot;&gt;&lt;i class&#x3D;&quot;icon-user3&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Landlords&lt;/a&gt;&lt;/span&gt;
+			&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Maintenance tickets&quot;&gt;&lt;i class&#x3D;&quot;icon-hammer-wrench&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Maintenance tickets  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;42&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;app-menu-group&quot;&gt;
+		&lt;ul class&#x3D;&quot;nav nav-pills nav-stacked&quot;&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Accounting dashboard&quot;&gt;&lt;strong&gt;&lt;i class&#x3D;&quot;icon-coin-pound&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Accounting dashboard&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Sales invoices&quot;&gt;&lt;i class&#x3D;&quot;icon-drawer-out&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Sales invoices&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Purchase invoices&quot;&gt;&lt;i class&#x3D;&quot;icon-drawer-in&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Purchase invoices&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Client &amp;amp; deposit accounts&quot;&gt;&lt;i class&#x3D;&quot;icon-safe&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Client &amp;amp; deposit accounts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;Sub accounts&quot;&gt;&lt;i class&#x3D;&quot;icon-user3&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;Sub accounts&lt;/a&gt;&lt;/span&gt;
+			&lt;/li&gt;
+			&lt;li role&#x3D;&quot;presentation&quot;&gt;&lt;a href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;right&quot; title&#x3D;&quot;System pots&quot;&gt;&lt;i class&#x3D;&quot;icon-cabinet&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;span class&#x3D;&quot;visible-lg-inline&quot;&gt;System pots&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/aside&gt;</code></pre>
+</div>
+
 
 </div>
 
